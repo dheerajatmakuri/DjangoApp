@@ -1,101 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>CSS Template</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: yellow;
-}
-
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 70%;
-  background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
-}
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: yellow;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  nav, article {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dheeraj Atmakuri's Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header, .section {
+            margin-bottom: 20px;
+        }
+        .header {
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .contact-info {
+            text-align: center;
+        }
+        .section h2 {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-
-
-<header>
-  <h2>Free DevOps Course By Abhishek</h2>
-</header>
-
-<section>
-  <nav>
-    <ul>
-      <li><a href="www.youtube.com/@AbhishekVeeramalla">YouTube</a></li>
-      <li><a href="www.linkedin.com/in/abhishek-veeramalla-77b33996/">LinkedIn</a></li>
-      <li><a href="https://telegram.me/abhishekveeramalla">Telegram</a></li>
-    </ul>
-  </nav>
-  
-  <article>
-    <h1>Agenda</h1>
-    <p>Learn DevOps with strong foundational knowledge and practical understanding</p>
-    <p>Please Share the Channel with your friends and colleagues</p>
-  </article>
-</section>
-
-<footer>
-  <p>@AbhishekVeeramalla</p>
-</footer>
-
+    <div class="container">
+        <div class="header">
+            <h1>Dheeraj Atmakuri</h1>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:dheerajatmakuri6@gmail.com">dheerajatmakuri6@gmail.com</a> | Phone: (469) 316-0963</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/dheeraj-atmakuri/">/in/dheeraj-atmakuri/</a> | Portfolio: <a href="https://dheerajatmakuri">dheerajatmakuri</a> | GitHub: <a href="https://github.com/dheerajatmakuri">dheerajatmakuri</a></p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>EDUCATION</h2>
+            <p><strong>MS in Information & Tech Mgmt., The University of Texas at Dallas, TX, USA (GPA: 4.0/4.0)</strong><br>Jan 2024 – May 2025</p>
+            <ul>
+                <li>Coursework: Object-oriented programming with Python, Database Foundations & Business Analytics, Data Visualization, Cloud Computing with AWS and Azure, Data Warehousing, CRM with Salesforce, System Analysis, and Project Management.</li>
+            </ul>
+            <p><strong>BS in Electronics & Communications Engineering, GITAM University, India (GPA: 3.55/4.0)</strong><br>Jul 2017 – May 2021</p>
+            <ul>
+                <li>Coursework: Programming with C, Introduction to Java, Cloud Computing, Data Base Management Systems.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>TECHNICAL SKILLS</h2>
+            <ul>
+                <li>Languages & Web Technologies: C, Python, JavaScript, Shell Scripting, HTML, CSS, Rest API, Postman, SQL, PostgreSQL</li>
+                <li>Tools: GitLab, GitHub, Deepface, OpenCV, MongoDB, Jenkins, JIRA, ELK, Confluence, Artifactory, Excel, Power BI, Tableau</li>
+                <li>CICD | Cloud: Docker, Kubernetes, Ansible, ArgoCD</li>
+                <li>AWS: EC2, S3, RDS, VPC, IAM, Code Commit, CodeBuild, Code Deploy</li>
+                <li>Azure: Azure VM, Azure DevOps, Azure Pipelines, Azure Agent Pool, Azure Container Registry, Azure Kubernetes Service</li>
+                <li>OS & Networks: Windows, Linux, TCP, UDP, IP, HTTP, LDAP, SSH, DNS, DHCP, FTP, SMTP, SNMP, NFS</li>
+                <li>Salesforce: Sales Cloud, Experience Cloud</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>WORK EXPERIENCE</h2>
+            <p><strong>DevOps Engineer, Accenture, Hyderabad, India.</strong><br>Nov 2022 – Dec 2023</p>
+            <ul>
+                <li>Assisted in coordinating development teams and system administrators to deploy and maintain 3 cloud-based web applications, contributing to a 20% efficiency improvement in operations.</li>
+                <li>Supported performance testing for software components like databases, networks, and servers, identifying opportunities to optimize application speed by up to 15%.</li>
+                <li>Automated deployment tasks using Bash scripting and Python, reducing manual errors by 30% and improving deployment efficiency by 25%.</li>
+                <li>Gained hands-on experience with Ansible configuration management tools, facilitating the setup and maintenance of infrastructure in four production environments.</li>
+                <li>Collaborated with senior DevOps engineers to improve workflows using Git version control, helping reduce incident resolution time by 40% and streamline debugging processes.</li>
+                <li>Monitored system health metrics (e.g., CPU and memory usage), identifying and troubleshooting potential issues early, resulting in a 10% reduction in system downtime.</li>
+            </ul>
+            
+            <p><strong>QA Engineer, Accenture, Hyderabad, India.</strong><br>Aug 2021 – Oct 2022</p>
+            <ul>
+                <li>Collaborated with development, project teams, and stakeholders to align testing efforts with quality objectives for Salesforce applications, providing regular updates and feedback.</li>
+                <li>Conducted requirements gathering and analysis to translate business needs into detailed test cases, identifying edge cases and refining acceptance criteria to improve quality and user experience.</li>
+                <li>Designed and executed test plans, including manual, regression, and user acceptance testing (UAT), to validate Salesforce application functionality and compliance.</li>
+                <li>Managed defect tracking using Jira, ensuring accurate logging, prioritization, and timely resolution by collaborating with development teams and participating in triage discussions.</li>
+                <li>Documented all testing activities, including test cases, defect reports, and results, to maintain transparency and inform stakeholders of progress.</li>
+                <li>Conducted root cause analysis of recurring defects, implementing preventive measures to enhance product quality over time.</li>
+                <li>Supported UAT by preparing test environments, guiding users through test cases, and documenting feedback to ensure end-user satisfaction.</li>
+                <li>Contributed to process improvements by implementing QA best practices, optimizing test case management, and mentoring junior testers on Salesforce-specific practices.</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>PROJECTS</h2>
+            <ul>
+                <li><strong>Designed and implemented a robust CI/CD pipeline leveraging Azure Pipelines and ArgoCD for a 3-tier application...</strong> Full details in the original resume text.</li>
+                <li><strong>Responsive portfolio website:</strong> Developed and deployed a portfolio website using HTML, CSS, JavaScript, and ReactJS on Azure cloud services...</li>
+                <li><strong>Data Visualization:</strong> Analyzed financial trends (2002-2023) for top U.S. airlines using Pandas for data cleaning and manipulation...</li>
+                <li><strong>Data Visualization:</strong> Conducted data analysis for BLINK IT grocery delivery app, created a dashboard showcasing sales and ratings...</li>
+                <li><strong>Responsive React Application:</strong> Developed a responsive React application showcasing The University of Texas at Dallas...</li>
+                <li><strong>Registered Vehicle Management System:</strong> Developed a Registered Vehicle Management System using MySQL, enhancing data integrity and reporting...</li>
+                <li><strong>Facial Emotion Detection with DeepFace and OpenCV:</strong> Implemented a real-time facial emotion detection system...</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>AWARDS/RECOGNITIONS</h2>
+            <ul>
+                <li><strong>Accenture Celebrates Excellence (ACE) Award:</strong> Recognized for excellent client feedback and outstanding performance...</li>
+                <li><strong>Tech Visionary Award:</strong> Awarded for outstanding work handling project delivery pressure despite regular requirement changes...</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2>CERTIFICATIONS</h2>
+            <ul>
+                <li>Amazon AWS Certified Cloud Practitioner</li>
+                <li>Salesforce Certified Associate</li>
+                <li>Salesforce Certified Administrator</li>
+                <li>Salesforce Certified App Builder</li>
+                <li>Postman Certified API Fundamentals Student Expert</li>
+                <li>Atlassian Certified Jira Fundamentals</li>
+                <li>Google Cloud Certified Introduction to Generative AI</li>
+                <li>Google Cloud Certified Introduction to Responsible AI</li>
+                <li>Google Certified Generative AI Fundamentals</li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
-
